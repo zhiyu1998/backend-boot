@@ -1,6 +1,7 @@
 package cn.zhiyucs.interceptor;
 
 import cn.hutool.core.text.CharSequenceUtil;
+import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.core.toolkit.PluginUtils;
 import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
 import net.sf.jsqlparser.JSQLParserException;
@@ -48,8 +49,8 @@ public class DataScopeInnerInterceptor implements InnerInterceptor {
         // 判断参数里是否有DataScope对象
         if (parameter instanceof Map) {
             Map<?, ?> parameterMap = (Map<?, ?>) parameter;
-            for (Map.Entry entry : parameterMap.entrySet()) {
-                if (entry.getValue() != null && entry.getValue() instanceof DataScope) {
+            for (Map.Entry<?, ?> entry : parameterMap.entrySet()) {
+                if (ObjectUtil.isNotNull(entry.getValue()) && entry.getValue() instanceof DataScope) {
                     return (DataScope) entry.getValue();
                 }
             }
@@ -73,7 +74,7 @@ public class DataScopeInnerInterceptor implements InnerInterceptor {
                 plainSelect.setWhere(andExpression);
             }
 
-            return select.toString().replaceAll("'", "");
+            return select.toString().replace("'", "");
         } catch (JSQLParserException e) {
             return buildSql;
         }
