@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.hutool.core.text.CharSequenceUtil;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysPostConvert;
 import cn.zhiyucs.system.dao.SysPostDao;
 import cn.zhiyucs.system.entity.SysPostEntity;
@@ -49,8 +49,8 @@ public class SysPostServiceImpl extends BaseServiceImpl<SysPostDao, SysPostEntit
 
     private Wrapper<SysPostEntity> getWrapper(SysPostQuery query) {
         LambdaQueryWrapper<SysPostEntity> wrapper = new LambdaQueryWrapper<>();
-        wrapper.like(StrUtil.isNotBlank(query.getPostCode()), SysPostEntity::getPostCode, query.getPostCode());
-        wrapper.like(StrUtil.isNotBlank(query.getPostName()), SysPostEntity::getPostName, query.getPostName());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getPostCode()), SysPostEntity::getPostCode, query.getPostCode());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getPostName()), SysPostEntity::getPostName, query.getPostName());
         wrapper.eq(query.getStatus() != null, SysPostEntity::getStatus, query.getStatus());
         wrapper.orderByAsc(SysPostEntity::getSort);
 

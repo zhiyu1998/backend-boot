@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.hutool.core.text.CharSequenceUtil;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysLogLoginConvert;
 import cn.zhiyucs.system.dao.SysLogLoginDao;
 import cn.zhiyucs.system.entity.SysLogLoginEntity;
@@ -37,8 +37,8 @@ public class SysLogLoginServiceImpl extends BaseServiceImpl<SysLogLoginDao, SysL
 
     private LambdaQueryWrapper<SysLogLoginEntity> getWrapper(SysLogLoginQuery query) {
         LambdaQueryWrapper<SysLogLoginEntity> wrapper = Wrappers.lambdaQuery();
-        wrapper.like(StrUtil.isNotBlank(query.getUsername()), SysLogLoginEntity::getUsername, query.getUsername());
-        wrapper.like(StrUtil.isNotBlank(query.getAddress()), SysLogLoginEntity::getAddress, query.getAddress());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getUsername()), SysLogLoginEntity::getUsername, query.getUsername());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getAddress()), SysLogLoginEntity::getAddress, query.getAddress());
         wrapper.like(query.getStatus() != null, SysLogLoginEntity::getStatus, query.getStatus());
         wrapper.orderByDesc(SysLogLoginEntity::getId);
 

@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.hutool.core.text.CharSequenceUtil;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysDictTypeConvert;
 import cn.zhiyucs.system.dao.SysDictDataDao;
 import cn.zhiyucs.system.dao.SysDictTypeDao;
@@ -43,8 +43,8 @@ public class SysDictTypeServiceImpl extends BaseServiceImpl<SysDictTypeDao, SysD
 
     private Wrapper<SysDictTypeEntity> getWrapper(SysDictTypeQuery query) {
         LambdaQueryWrapper<SysDictTypeEntity> wrapper = new LambdaQueryWrapper<>();
-        wrapper.like(StrUtil.isNotBlank(query.getDictType()), SysDictTypeEntity::getDictType, query.getDictType());
-        wrapper.like(StrUtil.isNotBlank(query.getDictName()), SysDictTypeEntity::getDictName, query.getDictName());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getDictType()), SysDictTypeEntity::getDictType, query.getDictType());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getDictName()), SysDictTypeEntity::getDictName, query.getDictName());
         wrapper.orderByAsc(SysDictTypeEntity::getSort);
 
         return wrapper;

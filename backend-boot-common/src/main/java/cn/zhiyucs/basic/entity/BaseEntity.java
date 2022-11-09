@@ -1,4 +1,4 @@
-package cn.zhiyucs.entity;
+package cn.zhiyucs.basic.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

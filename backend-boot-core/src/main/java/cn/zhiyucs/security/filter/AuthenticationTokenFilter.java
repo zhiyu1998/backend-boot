@@ -1,7 +1,7 @@
 package cn.zhiyucs.security.filter;
 
 import cn.zhiyucs.cache.TokenStoreCache;
-import cn.zhiyucs.user.UserDetail;
+import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.utils.TokenUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

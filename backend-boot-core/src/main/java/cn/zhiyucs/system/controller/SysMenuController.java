@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.controller;
 
-import cn.zhiyucs.user.SecurityUser;
-import cn.zhiyucs.user.UserDetail;
+import cn.zhiyucs.basic.user.SecurityUser;
+import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.system.convert.SysMenuConvert;
 import cn.zhiyucs.system.entity.SysMenuEntity;

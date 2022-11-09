@@ -1,6 +1,6 @@
 package cn.zhiyucs.security.event;
 
-import cn.zhiyucs.user.UserDetail;
+import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.enums.system.LoginOperationEnum;
 import cn.zhiyucs.system.service.SysLogLoginService;

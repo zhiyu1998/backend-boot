@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.user.UserDetail;
+import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.system.convert.SysUserConvert;
 import cn.zhiyucs.system.dao.SysRoleDao;
 import cn.zhiyucs.system.dao.SysRoleDataScopeDao;

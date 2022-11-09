@@ -1,4 +1,4 @@
-package cn.zhiyucs.query;
+package cn.zhiyucs.basic.query;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

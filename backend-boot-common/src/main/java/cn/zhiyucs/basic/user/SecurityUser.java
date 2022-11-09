@@ -1,4 +1,4 @@
-package cn.zhiyucs.user;
+package cn.zhiyucs.basic.user;
 
 import org.springframework.security.core.context.SecurityContextHolder;
 

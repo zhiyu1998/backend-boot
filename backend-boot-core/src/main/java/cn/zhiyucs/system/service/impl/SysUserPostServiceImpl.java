@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.dao.SysUserPostDao;
 import cn.zhiyucs.system.entity.SysUserPostEntity;
 import cn.zhiyucs.system.service.SysUserPostService;

@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.dao;
 
-import cn.zhiyucs.dao.BaseDao;
+import cn.zhiyucs.basic.dao.BaseDao;
 import cn.zhiyucs.system.entity.SysUserEntity;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.ibatis.annotations.Mapper;

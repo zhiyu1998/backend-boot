@@ -1,10 +1,9 @@
-package cn.zhiyucs.service.impl;
+package cn.zhiyucs.basic.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.query.Query;
-import cn.zhiyucs.service.BaseService;
-import cn.zhiyucs.user.SecurityUser;
-import cn.zhiyucs.user.UserDetail;
+import cn.zhiyucs.basic.query.Query;
+import cn.zhiyucs.basic.service.BaseService;
+import cn.zhiyucs.basic.user.SecurityUser;
+import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.interceptor.DataScope;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;

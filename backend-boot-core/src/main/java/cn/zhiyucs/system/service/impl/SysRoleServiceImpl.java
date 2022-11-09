@@ -1,11 +1,11 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.hutool.core.text.CharSequenceUtil;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
+import cn.zhiyucs.enums.system.DataScopeEnum;
 import cn.zhiyucs.system.convert.SysRoleConvert;
 import cn.zhiyucs.system.dao.SysRoleDao;
 import cn.zhiyucs.system.entity.SysRoleEntity;
-import cn.zhiyucs.enums.system.DataScopeEnum;
 import cn.zhiyucs.system.query.SysRoleQuery;
 import cn.zhiyucs.system.service.SysRoleDataScopeService;
 import cn.zhiyucs.system.service.SysRoleMenuService;
@@ -57,7 +57,7 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleDao, SysRoleEntit
 
     private Wrapper<SysRoleEntity> getWrapper(SysRoleQuery query) {
         LambdaQueryWrapper<SysRoleEntity> wrapper = new LambdaQueryWrapper<>();
-        wrapper.like(StrUtil.isNotBlank(query.getName()), SysRoleEntity::getName, query.getName());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getName()), SysRoleEntity::getName, query.getName());
 
         // 数据权限
         dataScopeWrapper(wrapper);

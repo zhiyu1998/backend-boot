@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.hutool.core.text.CharSequenceUtil;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysAttachmentConvert;
 import cn.zhiyucs.system.dao.SysAttachmentDao;
 import cn.zhiyucs.system.entity.SysAttachmentEntity;
@@ -12,7 +12,6 @@ import cn.zhiyucs.utils.PageResult;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -35,8 +34,8 @@ public class SysAttachmentServiceImpl extends BaseServiceImpl<SysAttachmentDao, 
 
     private LambdaQueryWrapper<SysAttachmentEntity> getWrapper(SysAttachmentQuery query) {
         LambdaQueryWrapper<SysAttachmentEntity> wrapper = Wrappers.lambdaQuery();
-        wrapper.eq(StrUtil.isNotBlank(query.getPlatform()), SysAttachmentEntity::getPlatform, query.getPlatform());
-        wrapper.like(StrUtil.isNotBlank(query.getName()), SysAttachmentEntity::getName, query.getName());
+        wrapper.eq(CharSequenceUtil.isNotBlank(query.getPlatform()), SysAttachmentEntity::getPlatform, query.getPlatform());
+        wrapper.like(CharSequenceUtil.isNotBlank(query.getName()), SysAttachmentEntity::getName, query.getName());
         wrapper.orderByDesc(SysAttachmentEntity::getId);
         return wrapper;
     }

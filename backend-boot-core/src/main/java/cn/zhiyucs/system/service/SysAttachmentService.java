@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service;
 
-import cn.zhiyucs.service.BaseService;
+import cn.zhiyucs.basic.service.BaseService;
 import cn.zhiyucs.system.entity.SysAttachmentEntity;
 import cn.zhiyucs.system.query.SysAttachmentQuery;
 import cn.zhiyucs.system.vo.SysAttachmentVO;

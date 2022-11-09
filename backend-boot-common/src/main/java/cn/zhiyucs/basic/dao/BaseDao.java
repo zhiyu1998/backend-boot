@@ -1,4 +1,4 @@
-package cn.zhiyucs.dao;
+package cn.zhiyucs.basic.dao;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

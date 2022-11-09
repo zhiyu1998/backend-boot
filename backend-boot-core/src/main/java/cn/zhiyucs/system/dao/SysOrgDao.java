@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.dao;
 
-import cn.zhiyucs.dao.BaseDao;
+import cn.zhiyucs.basic.dao.BaseDao;
 import cn.zhiyucs.system.entity.SysOrgEntity;
 import org.apache.ibatis.annotations.Mapper;
 

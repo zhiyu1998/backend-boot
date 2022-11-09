@@ -1,4 +1,4 @@
-package cn.zhiyucs.service;
+package cn.zhiyucs.basic.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 

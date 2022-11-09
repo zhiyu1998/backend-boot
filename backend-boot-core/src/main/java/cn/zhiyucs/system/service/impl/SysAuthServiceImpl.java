@@ -4,7 +4,7 @@ import cn.hutool.core.util.RandomUtil;
 import cn.zhiyucs.api.message.SmsApi;
 import cn.zhiyucs.cache.TokenStoreCache;
 import cn.zhiyucs.security.mobile.MobileAuthenticationToken;
-import cn.zhiyucs.user.UserDetail;
+import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.exception.ServerException;
 import cn.zhiyucs.enums.system.LoginOperationEnum;

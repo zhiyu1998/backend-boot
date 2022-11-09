@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.query;
 
-import cn.zhiyucs.query.Query;
+import cn.zhiyucs.basic.query.Query;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

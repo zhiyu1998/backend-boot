@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.entity;
 
-import cn.zhiyucs.entity.BaseEntity;
+import cn.zhiyucs.basic.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

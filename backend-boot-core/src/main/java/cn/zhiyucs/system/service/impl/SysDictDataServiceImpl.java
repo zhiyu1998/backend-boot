@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysDictDataConvert;
 import cn.zhiyucs.system.dao.SysDictDataDao;
 import cn.zhiyucs.system.entity.SysDictDataEntity;
@@ -11,7 +11,6 @@ import cn.zhiyucs.utils.PageResult;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
