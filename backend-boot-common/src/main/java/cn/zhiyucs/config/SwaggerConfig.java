@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public GroupedOpenApi userApi() {
         String[] paths = {"/**"};
         String[] packagedToMatch = {"cn.zhiyucs"};
-        return GroupedOpenApi.builder().group("智能仓库管理")
+        return GroupedOpenApi.builder().group("Backend-Boot")
                 .pathsToMatch(paths)
                 .packagesToScan(packagedToMatch).build();
     }
@@ -31,13 +31,13 @@ public class SwaggerConfig {
         contact.setName("zhiyu1998");
 
         return new OpenAPI().info(new Info()
-                .title("智能仓库管理")
-                .description("智能仓库管理")
+                .title("Backend-Boot")
+                .description("Backend-Boot")
                 .contact(contact)
                 .version("1.0.0")
-                .termsOfService("175.178.215.113")
+                .termsOfService("https://github.com/zhiyu1998/backend-boot/tree/main")
                 .license(new License().name("MIT")
-                        .url("暂无")));
+                        .url("https://github.com/zhiyu1998/backend-boot/tree/main")));
     }
 
 }
