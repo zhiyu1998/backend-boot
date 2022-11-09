@@ -2,7 +2,6 @@ package cn.zhiyucs.security.service;
 
 import cn.zhiyucs.api.message.SmsApi;
 import cn.zhiyucs.security.mobile.MobileVerifyCodeService;
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

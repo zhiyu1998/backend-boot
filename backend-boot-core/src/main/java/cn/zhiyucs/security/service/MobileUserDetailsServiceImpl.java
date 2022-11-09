@@ -4,7 +4,6 @@ import cn.zhiyucs.security.mobile.MobileUserDetailsService;
 import cn.zhiyucs.system.dao.SysUserDao;
 import cn.zhiyucs.system.entity.SysUserEntity;
 import cn.zhiyucs.system.service.SysUserDetailsService;
-import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

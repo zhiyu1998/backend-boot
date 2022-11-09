@@ -1,4 +1,4 @@
-package cn.zhiyucs.config;
+package cn.zhiyucs.security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

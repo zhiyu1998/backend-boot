@@ -1,4 +1,4 @@
-package cn.zhiyucs.filter;
+package cn.zhiyucs.security.filter;
 
 import cn.zhiyucs.cache.TokenStoreCache;
 import cn.zhiyucs.security.user.UserDetail;

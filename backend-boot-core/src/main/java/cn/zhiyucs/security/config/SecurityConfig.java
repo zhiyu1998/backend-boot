@@ -1,4 +1,4 @@
-package cn.zhiyucs.config;
+package cn.zhiyucs.security.config;
 
 import cn.zhiyucs.security.mobile.MobileAuthenticationProvider;
 import cn.zhiyucs.security.mobile.MobileUserDetailsService;
