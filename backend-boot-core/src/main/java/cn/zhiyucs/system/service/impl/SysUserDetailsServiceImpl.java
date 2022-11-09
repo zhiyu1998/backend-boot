@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.security.user.UserDetail;
+import cn.zhiyucs.user.UserDetail;
 import cn.zhiyucs.system.convert.SysUserConvert;
 import cn.zhiyucs.system.dao.SysRoleDao;
 import cn.zhiyucs.system.dao.SysRoleDataScopeDao;
@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -67,7 +68,7 @@ public class SysUserDetailsServiceImpl implements SysUserDetailsService {
 
         if (dataScope.equals(DataScopeEnum.ALL.getValue())) {
             // 全部数据权限，则返回null
-            return null;
+            return Collections.emptyList();
         } else if (dataScope.equals(DataScopeEnum.ORG_AND_CHILD.getValue())) {
             // 本机构及子机构数据
             List<Long> dataScopeList = sysOrgService.getSubOrgIdList(userDetail.getOrgId());

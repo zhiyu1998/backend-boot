@@ -3,8 +3,8 @@ package cn.zhiyucs.service.impl;
 import cn.hutool.core.util.StrUtil;
 import cn.zhiyucs.query.Query;
 import cn.zhiyucs.service.BaseService;
-import cn.zhiyucs.security.user.SecurityUser;
-import cn.zhiyucs.security.user.UserDetail;
+import cn.zhiyucs.user.SecurityUser;
+import cn.zhiyucs.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.interceptor.DataScope;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -14,6 +14,7 @@ import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.google.common.base.Joiner;
 
 import java.util.List;
 
@@ -89,13 +90,13 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T> extends ServiceImpl<M, 
             return null;
         }
         // 数据过滤
-        if (dataScopeList.size() > 0) {
+        if (!dataScopeList.isEmpty()) {
             if (StringUtils.isBlank(orgIdAlias)) {
                 orgIdAlias = "org_id";
             }
             sqlFilter.append(tableAlias).append(orgIdAlias);
 
-            sqlFilter.append(" in(").append(StrUtil.join(",", dataScopeList)).append(")");
+            sqlFilter.append(" in(").append(Joiner.on(",").skipNulls().join(dataScopeList)).append(")");
 
             sqlFilter.append(" or ");
         }

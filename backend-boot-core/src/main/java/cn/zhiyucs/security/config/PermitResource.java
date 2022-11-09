@@ -38,11 +38,12 @@ public class PermitResource {
         // 解析资源文件
         for (Resource resource : resources) {
             Properties properties = loadYamlProperties(resource);
-
-            for (Map.Entry<Object, Object> entry : properties.entrySet()) {
-                String tmpKey = StringUtils.substringBefore(entry.getKey().toString(), "[");
-                if (tmpKey.equalsIgnoreCase(key)) {
-                    list.add(entry.getValue().toString());
+            if (properties != null) {
+                for (Map.Entry<Object, Object> entry : properties.entrySet()) {
+                    String tmpKey = StringUtils.substringBefore(entry.getKey().toString(), "[");
+                    if (tmpKey.equalsIgnoreCase(key)) {
+                        list.add(entry.getValue().toString());
+                    }
                 }
             }
         }

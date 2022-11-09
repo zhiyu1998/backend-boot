@@ -1,4 +1,4 @@
-package cn.zhiyucs.security.user;
+package cn.zhiyucs.user;
 
 import org.springframework.security.core.context.SecurityContextHolder;
 
@@ -9,6 +9,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
  */
 public class SecurityUser {
 
+    private SecurityUser(){}
     /**
      * 获取用户信息
      */

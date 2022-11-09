@@ -1,8 +1,6 @@
 package cn.zhiyucs.system.controller;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.security.user.SecurityUser;
-import cn.zhiyucs.security.user.UserDetail;
+import cn.hutool.core.text.CharSequenceUtil;
 import cn.zhiyucs.system.convert.SysUserConvert;
 import cn.zhiyucs.system.entity.SysUserEntity;
 import cn.zhiyucs.system.query.SysUserQuery;
@@ -11,6 +9,8 @@ import cn.zhiyucs.system.service.SysUserRoleService;
 import cn.zhiyucs.system.service.SysUserService;
 import cn.zhiyucs.system.vo.SysUserPasswordVO;
 import cn.zhiyucs.system.vo.SysUserVO;
+import cn.zhiyucs.user.SecurityUser;
+import cn.zhiyucs.user.UserDetail;
 import cn.zhiyucs.utils.PageResult;
 import cn.zhiyucs.utils.R;
 import io.swagger.v3.oas.annotations.Operation;
@@ -102,7 +102,7 @@ public class SysUserController {
     @PreAuthorize("hasAuthority('sys:user:save')")
     public R<String> save(@RequestBody @Valid SysUserVO vo) {
         // 新增密码不能为空
-        if (StrUtil.isBlank(vo.getPassword())) {
+        if (CharSequenceUtil.isBlank(vo.getPassword())) {
             R.error("密码不能为空");
         }
 
@@ -120,7 +120,7 @@ public class SysUserController {
     @PreAuthorize("hasAuthority('sys:user:update')")
     public R<String> update(@RequestBody @Valid SysUserVO vo) {
         // 如果密码不为空，则进行加密处理
-        if (StrUtil.isBlank(vo.getPassword())) {
+        if (CharSequenceUtil.isBlank(vo.getPassword())) {
             vo.setPassword(null);
         } else {
             vo.setPassword(passwordEncoder.encode(vo.getPassword()));

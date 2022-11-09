@@ -1,7 +1,7 @@
 package cn.zhiyucs.handler;
 
-import cn.zhiyucs.security.user.SecurityUser;
-import cn.zhiyucs.security.user.UserDetail;
+import cn.zhiyucs.user.SecurityUser;
+import cn.zhiyucs.user.UserDetail;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 
@@ -13,13 +13,13 @@ import java.util.Date;
  * @author zhiyu1998
  */
 public class FieldMetaObjectHandler implements MetaObjectHandler {
-    private final static String CREATE_TIME = "createTime";
-    private final static String CREATOR = "creator";
-    private final static String UPDATE_TIME = "updateTime";
-    private final static String UPDATER = "updater";
-    private final static String ORG_ID = "orgId";
-    private final static String VERSION = "version";
-    private final static String DELETED = "deleted";
+    private static final String CREATE_TIME = "createTime";
+    private static final String CREATOR = "creator";
+    private static final String UPDATE_TIME = "updateTime";
+    private static final String UPDATER = "updater";
+    private static final String ORG_ID = "orgId";
+    private static final String VERSION = "version";
+    private static final String DELETED = "deleted";
 
     @Override
     public void insertFill(MetaObject metaObject) {

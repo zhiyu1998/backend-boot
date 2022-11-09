@@ -1,17 +1,17 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.service.impl.BaseServiceImpl;
-import cn.zhiyucs.security.user.UserDetail;
+import cn.hutool.core.text.CharSequenceUtil;
 import cn.zhiyucs.constant.Constant;
+import cn.zhiyucs.enums.system.SuperAdminEnum;
 import cn.zhiyucs.exception.ServerException;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysMenuConvert;
 import cn.zhiyucs.system.dao.SysMenuDao;
 import cn.zhiyucs.system.entity.SysMenuEntity;
-import cn.zhiyucs.enums.system.SuperAdminEnum;
 import cn.zhiyucs.system.service.SysMenuService;
 import cn.zhiyucs.system.service.SysRoleMenuService;
 import cn.zhiyucs.system.vo.SysMenuVO;
+import cn.zhiyucs.user.UserDetail;
 import cn.zhiyucs.utils.TreeUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.stereotype.Service;
@@ -106,7 +106,7 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuDao, SysMenuEntit
         // 用户权限列表
         Set<String> permsSet = new HashSet<>();
         for (String authority : authorityList) {
-            if (StrUtil.isBlank(authority)) {
+            if (CharSequenceUtil.isBlank(authority)) {
                 continue;
             }
             permsSet.addAll(Arrays.asList(authority.trim().split(",")));

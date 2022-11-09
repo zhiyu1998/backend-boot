@@ -1,10 +1,9 @@
 package cn.zhiyucs.security.event;
 
-import cn.zhiyucs.security.user.UserDetail;
+import cn.zhiyucs.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.enums.system.LoginOperationEnum;
 import cn.zhiyucs.system.service.SysLogLoginService;
-import lombok.AllArgsConstructor;
 import org.springframework.context.event.EventListener;
 import org.springframework.security.authentication.event.AbstractAuthenticationFailureEvent;
 import org.springframework.security.authentication.event.AuthenticationSuccessEvent;

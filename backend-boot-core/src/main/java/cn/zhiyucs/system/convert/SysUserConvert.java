@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.convert;
 
 
-import cn.zhiyucs.security.user.UserDetail;
+import cn.zhiyucs.user.UserDetail;
 import cn.zhiyucs.system.entity.SysUserEntity;
 import cn.zhiyucs.system.vo.SysUserVO;
 import org.mapstruct.Mapper;

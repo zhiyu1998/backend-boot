@@ -1,6 +1,6 @@
 package cn.zhiyucs.cache;
 
-import cn.zhiyucs.security.user.UserDetail;
+import cn.zhiyucs.user.UserDetail;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;

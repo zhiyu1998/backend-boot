@@ -1,4 +1,4 @@
-package cn.zhiyucs.security.user;
+package cn.zhiyucs.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
