@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service;
 
-import cn.zhiyucs.common.service.BaseService;
+import cn.zhiyucs.service.BaseService;
 import cn.zhiyucs.system.entity.SysDictTypeEntity;
 import cn.zhiyucs.system.query.SysDictTypeQuery;
 import cn.zhiyucs.system.vo.SysDictTypeVO;

@@ -1,12 +1,12 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.system.convert.SysUserConvert;
 import cn.zhiyucs.system.dao.SysRoleDao;
 import cn.zhiyucs.system.dao.SysRoleDataScopeDao;
 import cn.zhiyucs.system.entity.SysUserEntity;
-import cn.zhiyucs.system.enums.DataScopeEnum;
-import cn.zhiyucs.system.enums.UserStatusEnum;
+import cn.zhiyucs.enums.system.DataScopeEnum;
+import cn.zhiyucs.enums.system.UserStatusEnum;
 import cn.zhiyucs.system.service.SysMenuService;
 import cn.zhiyucs.system.service.SysOrgService;
 import cn.zhiyucs.system.service.SysUserDetailsService;

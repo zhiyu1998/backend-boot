@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service;
 
-import cn.zhiyucs.common.service.BaseService;
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.service.BaseService;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.system.entity.SysMenuEntity;
 import cn.zhiyucs.system.vo.SysMenuVO;
 

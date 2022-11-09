@@ -1,6 +1,6 @@
 package cn.zhiyucs.security.service;
 
-import cn.zhiyucs.common.mobile.MobileUserDetailsService;
+import cn.zhiyucs.security.mobile.MobileUserDetailsService;
 import cn.zhiyucs.system.dao.SysUserDao;
 import cn.zhiyucs.system.entity.SysUserEntity;
 import cn.zhiyucs.system.service.SysUserDetailsService;
@@ -9,16 +9,20 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * 手机验证码登录 MobileUserDetailsService
  *
  * @author zhiyu1998
  */
 @Service
-@AllArgsConstructor
 public class MobileUserDetailsServiceImpl implements MobileUserDetailsService {
-    private final SysUserDetailsService sysUserDetailsService;
-    private final SysUserDao sysUserDao;
+    @Resource
+    private SysUserDetailsService sysUserDetailsService;
+
+    @Resource
+    private SysUserDao sysUserDao;
 
     @Override
     public UserDetails loadUserByMobile(String mobile) throws UsernameNotFoundException {

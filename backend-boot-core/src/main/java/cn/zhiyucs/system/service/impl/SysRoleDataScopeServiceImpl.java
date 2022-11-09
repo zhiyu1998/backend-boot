@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.dao.SysRoleDataScopeDao;
 import cn.zhiyucs.system.entity.SysRoleDataScopeEntity;
 import cn.zhiyucs.system.service.SysRoleDataScopeService;

@@ -1,8 +1,8 @@
 package cn.zhiyucs.system.controller;
 
 import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.common.user.SecurityUser;
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.security.user.SecurityUser;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.system.convert.SysUserConvert;
 import cn.zhiyucs.system.entity.SysUserEntity;
 import cn.zhiyucs.system.query.SysUserQuery;

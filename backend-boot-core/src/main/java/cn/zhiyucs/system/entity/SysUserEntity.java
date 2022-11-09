@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.entity;
 
-import cn.zhiyucs.common.entity.BaseEntity;
-import cn.zhiyucs.system.enums.UserStatusEnum;
+import cn.zhiyucs.entity.BaseEntity;
+import cn.zhiyucs.enums.system.UserStatusEnum;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

@@ -1,14 +1,14 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.exception.ServerException;
 import cn.zhiyucs.system.convert.SysMenuConvert;
 import cn.zhiyucs.system.dao.SysMenuDao;
 import cn.zhiyucs.system.entity.SysMenuEntity;
-import cn.zhiyucs.system.enums.SuperAdminEnum;
+import cn.zhiyucs.enums.system.SuperAdminEnum;
 import cn.zhiyucs.system.service.SysMenuService;
 import cn.zhiyucs.system.service.SysRoleMenuService;
 import cn.zhiyucs.system.vo.SysMenuVO;

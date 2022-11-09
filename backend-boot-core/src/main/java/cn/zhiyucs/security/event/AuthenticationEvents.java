@@ -1,8 +1,8 @@
 package cn.zhiyucs.security.event;
 
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
-import cn.zhiyucs.system.enums.LoginOperationEnum;
+import cn.zhiyucs.enums.system.LoginOperationEnum;
 import cn.zhiyucs.system.service.SysLogLoginService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.event.EventListener;
@@ -10,15 +10,18 @@ import org.springframework.security.authentication.event.AbstractAuthenticationF
 import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
+
 /**
  * 认证事件处理
  *
  * @author zhiyu1998
  */
 @Component
-@AllArgsConstructor
 public class AuthenticationEvents {
-    private final SysLogLoginService sysLogLoginService;
+
+    @Resource
+    private SysLogLoginService sysLogLoginService;
 
     @EventListener
     public void onSuccess(AuthenticationSuccessEvent event) {

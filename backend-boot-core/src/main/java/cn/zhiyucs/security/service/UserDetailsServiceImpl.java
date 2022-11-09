@@ -9,16 +9,21 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * 账号登录 UserDetailsService
  *
  * @author zhiyu1998
  */
 @Service
-@AllArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
-    private final SysUserDetailsService sysUserDetailsService;
-    private final SysUserDao sysUserDao;
+
+    @Resource
+    private SysUserDetailsService sysUserDetailsService;
+
+    @Resource
+    private SysUserDao sysUserDao;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -29,5 +34,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         return sysUserDetailsService.getUserDetails(userEntity);
     }
-
 }

@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysAttachmentConvert;
 import cn.zhiyucs.system.dao.SysAttachmentDao;
 import cn.zhiyucs.system.entity.SysAttachmentEntity;
@@ -24,7 +24,6 @@ import java.util.List;
  * @author zhiyu1998
  */
 @Service
-@AllArgsConstructor
 public class SysAttachmentServiceImpl extends BaseServiceImpl<SysAttachmentDao, SysAttachmentEntity> implements SysAttachmentService {
 
     @Override
@@ -61,5 +60,4 @@ public class SysAttachmentServiceImpl extends BaseServiceImpl<SysAttachmentDao, 
     public void delete(List<Long> idList) {
         removeByIds(idList);
     }
-
 }

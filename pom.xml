@@ -5,7 +5,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>backend-boot-api</module>
+        <module>backend-boot-web</module>
         <module>backend-boot-dal</module>
         <module>backend-boot-biz</module>
         <module>backend-boot-common</module>

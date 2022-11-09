@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.controller;
 
-import cn.zhiyucs.common.user.SecurityUser;
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.security.user.SecurityUser;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.system.convert.SysRoleConvert;
 import cn.zhiyucs.system.entity.SysRoleEntity;
 import cn.zhiyucs.system.query.SysRoleQuery;

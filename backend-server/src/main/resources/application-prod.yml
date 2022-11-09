@@ -1,16 +1,16 @@
 spring:
   redis:
     database: 1
-    host:
+    host: 127.0.0.1
     port: 6379
     #password:
     #timeout: 6000ms  # 连接超时时长（毫秒）
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://zhiyu1998:3306/zhiyu1998?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
-    username: zhiyu1998
-    password: zhiyu1998
+    url: jdbc:mysql://localhost:3306/backend_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    username: root
+    password:
     hikari:
       connection-timeout: 30000     # 等待连接池分配链接的最大时长（毫秒），超过这个时长还没有可用的连接则发生 SQLException，默认：30 秒
       minimum-idle: 2               # 最小空闲连接数

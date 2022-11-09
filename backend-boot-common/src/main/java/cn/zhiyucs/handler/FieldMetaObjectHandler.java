@@ -1,7 +1,7 @@
 package cn.zhiyucs.handler;
 
-import cn.zhiyucs.common.user.SecurityUser;
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.security.user.SecurityUser;
+import cn.zhiyucs.security.user.UserDetail;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 

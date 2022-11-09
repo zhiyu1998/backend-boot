@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysDictDataConvert;
 import cn.zhiyucs.system.dao.SysDictDataDao;
 import cn.zhiyucs.system.entity.SysDictDataEntity;
@@ -23,7 +23,6 @@ import java.util.List;
  * @author zhiyu1998
  */
 @Service
-@AllArgsConstructor
 public class SysDictDataServiceImpl extends BaseServiceImpl<SysDictDataDao, SysDictDataEntity> implements SysDictDataService {
 
     @Override

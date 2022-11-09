@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.exception.ServerException;
 import cn.zhiyucs.system.convert.SysOrgConvert;

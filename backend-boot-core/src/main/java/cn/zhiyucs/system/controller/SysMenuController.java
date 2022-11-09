@@ -1,11 +1,11 @@
 package cn.zhiyucs.system.controller;
 
-import cn.zhiyucs.common.user.SecurityUser;
-import cn.zhiyucs.common.user.UserDetail;
+import cn.zhiyucs.security.user.SecurityUser;
+import cn.zhiyucs.security.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.system.convert.SysMenuConvert;
 import cn.zhiyucs.system.entity.SysMenuEntity;
-import cn.zhiyucs.system.enums.MenuTypeEnum;
+import cn.zhiyucs.enums.system.MenuTypeEnum;
 import cn.zhiyucs.system.service.SysMenuService;
 import cn.zhiyucs.system.vo.SysMenuVO;
 import cn.zhiyucs.utils.R;

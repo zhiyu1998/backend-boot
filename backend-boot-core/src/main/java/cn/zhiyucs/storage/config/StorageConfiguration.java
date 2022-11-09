@@ -1,7 +1,7 @@
 package cn.zhiyucs.storage.config;
 
 
-import cn.zhiyucs.storage.enums.StorageTypeEnum;
+import cn.zhiyucs.enums.storage.StorageTypeEnum;
 import cn.zhiyucs.storage.properties.StorageProperties;
 import cn.zhiyucs.storage.service.*;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

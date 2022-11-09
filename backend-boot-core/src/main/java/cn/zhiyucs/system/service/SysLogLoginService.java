@@ -1,6 +1,6 @@
 package cn.zhiyucs.system.service;
 
-import cn.zhiyucs.common.service.BaseService;
+import cn.zhiyucs.service.BaseService;
 import cn.zhiyucs.system.entity.SysLogLoginEntity;
 import cn.zhiyucs.system.query.SysLogLoginQuery;
 import cn.zhiyucs.system.vo.SysLogLoginVO;

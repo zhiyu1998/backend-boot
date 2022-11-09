@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysPostConvert;
 import cn.zhiyucs.system.dao.SysPostDao;
 import cn.zhiyucs.system.entity.SysPostEntity;

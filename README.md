@@ -8,9 +8,9 @@ Cloud版本：正在搭建
 
 请遵守该maven顺序，否则改动后启动不起来
 
-1. core
-2. server
-3. common
+1. core    系统层面，分离业务
+2. server  启动
+3. common  公共类
 4. ...
 
 (备注：因为Spring Security依赖一些Impl，所以要先加载core)

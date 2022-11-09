@@ -1,6 +1,6 @@
 package cn.zhiyucs.storage.properties;
 
-import cn.zhiyucs.storage.enums.StorageTypeEnum;
+import cn.zhiyucs.enums.storage.StorageTypeEnum;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;

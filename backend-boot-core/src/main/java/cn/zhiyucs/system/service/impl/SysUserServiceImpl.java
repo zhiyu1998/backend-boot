@@ -1,12 +1,12 @@
 package cn.zhiyucs.system.service.impl;
 
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.constant.Constant;
 import cn.zhiyucs.exception.ServerException;
 import cn.zhiyucs.system.convert.SysUserConvert;
 import cn.zhiyucs.system.dao.SysUserDao;
 import cn.zhiyucs.system.entity.SysUserEntity;
-import cn.zhiyucs.system.enums.SuperAdminEnum;
+import cn.zhiyucs.enums.system.SuperAdminEnum;
 import cn.zhiyucs.system.query.SysRoleUserQuery;
 import cn.zhiyucs.system.query.SysUserQuery;
 import cn.zhiyucs.system.service.SysUserPostService;

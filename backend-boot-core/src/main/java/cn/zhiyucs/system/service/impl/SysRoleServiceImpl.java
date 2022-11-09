@@ -1,11 +1,11 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import cn.zhiyucs.common.service.impl.BaseServiceImpl;
+import cn.zhiyucs.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysRoleConvert;
 import cn.zhiyucs.system.dao.SysRoleDao;
 import cn.zhiyucs.system.entity.SysRoleEntity;
-import cn.zhiyucs.system.enums.DataScopeEnum;
+import cn.zhiyucs.enums.system.DataScopeEnum;
 import cn.zhiyucs.system.query.SysRoleQuery;
 import cn.zhiyucs.system.service.SysRoleDataScopeService;
 import cn.zhiyucs.system.service.SysRoleMenuService;
