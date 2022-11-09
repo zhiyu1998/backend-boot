@@ -1,7 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.lang.UUID;
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.text.CharSequenceUtil;
 import cn.zhiyucs.cache.RedisCache;
 import cn.zhiyucs.cache.RedisKeys;
 import cn.zhiyucs.system.service.SysCaptchaService;
@@ -48,7 +48,7 @@ public class SysCaptchaServiceImpl implements SysCaptchaService {
 
     @Override
     public boolean validate(String key, String code) {
-        if (StrUtil.isBlank(key) || StrUtil.isBlank(code)) {
+        if (CharSequenceUtil.isBlank(key) || CharSequenceUtil.isBlank(code)) {
             return false;
         }
 

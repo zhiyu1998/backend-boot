@@ -1,6 +1,6 @@
 package cn.zhiyucs.interceptor;
 
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.text.CharSequenceUtil;
 import com.baomidou.mybatisplus.core.toolkit.PluginUtils;
 import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
 import net.sf.jsqlparser.JSQLParserException;
@@ -29,7 +29,7 @@ public class DataScopeInnerInterceptor implements InnerInterceptor {
     public void beforeQuery(Executor executor, MappedStatement ms, Object parameter, RowBounds rowBounds, ResultHandler resultHandler, BoundSql boundSql) {
         DataScope scope = getDataScope(parameter);
         // 不进行数据过滤
-        if (scope == null || StrUtil.isBlank(scope.getSqlFilter())) {
+        if (scope == null || CharSequenceUtil.isBlank(scope.getSqlFilter())) {
             return;
         }
 

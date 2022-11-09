@@ -1,7 +1,7 @@
 package cn.zhiyucs.utils;
 
+import cn.hutool.core.text.CharSequenceUtil;
 import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
 import cn.zhiyucs.exception.ServerException;
 
 /**
@@ -11,8 +11,11 @@ import cn.zhiyucs.exception.ServerException;
  */
 public class AssertUtils {
 
+    private AssertUtils() {
+    }
+
     public static void isBlank(String str, String variable) {
-        if (StrUtil.isBlank(str)) {
+        if (CharSequenceUtil.isBlank(str)) {
             throw new ServerException(variable + "不能为空");
         }
     }

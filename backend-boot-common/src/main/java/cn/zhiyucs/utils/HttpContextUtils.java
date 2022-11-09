@@ -1,6 +1,6 @@
 package cn.zhiyucs.utils;
 
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.text.CharSequenceUtil;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -18,6 +18,8 @@ import java.util.Map;
  */
 public class HttpContextUtils {
 
+    private HttpContextUtils(){}
+
     public static HttpServletRequest getHttpServletRequest() {
         RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
         if (requestAttributes == null) {
@@ -34,7 +36,7 @@ public class HttpContextUtils {
         while (parameters.hasMoreElements()) {
             String parameter = parameters.nextElement();
             String value = request.getParameter(parameter);
-            if (StrUtil.isNotBlank(value)) {
+            if (CharSequenceUtil.isNotBlank(value)) {
                 params.put(parameter, value);
             }
         }
@@ -44,12 +46,14 @@ public class HttpContextUtils {
 
     public static String getDomain() {
         HttpServletRequest request = getHttpServletRequest();
+        assert request != null;
         StringBuffer url = request.getRequestURL();
         return url.delete(url.length() - request.getRequestURI().length(), url.length()).toString();
     }
 
     public static String getOrigin() {
         HttpServletRequest request = getHttpServletRequest();
+        assert request != null;
         return request.getHeader(HttpHeaders.ORIGIN);
     }
 }
