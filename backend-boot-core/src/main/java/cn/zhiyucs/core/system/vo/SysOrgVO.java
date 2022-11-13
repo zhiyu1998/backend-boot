@@ -1,11 +1,9 @@
 package cn.zhiyucs.core.system.vo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import cn.zhiyucs.core.utils.TreeNode;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import cn.zhiyucs.common.utils.DateUtils;
-import cn.zhiyucs.core.utils.TreeNode;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -30,7 +28,6 @@ public class SysOrgVO extends TreeNode<SysOrgVO> {
 	private Integer sort;
 
 	@Schema(description = "创建时间")
-	@JsonFormat(pattern = DateUtils.DATE_TIME_PATTERN)
 	private Date createTime;
 
 	@Schema(description = "上级名称")

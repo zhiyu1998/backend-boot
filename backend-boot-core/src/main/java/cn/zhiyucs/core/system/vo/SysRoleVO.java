@@ -1,9 +1,7 @@
 package cn.zhiyucs.core.system.vo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import cn.zhiyucs.common.utils.DateUtils;
 
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
@@ -40,7 +38,6 @@ public class SysRoleVO implements Serializable {
     private List<Long> orgIdList;
 
     @Schema(description = "创建时间")
-    @JsonFormat(pattern = DateUtils.DATE_TIME_PATTERN)
     private Date createTime;
 
 }

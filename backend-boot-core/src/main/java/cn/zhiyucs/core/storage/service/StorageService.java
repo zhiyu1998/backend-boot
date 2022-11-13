@@ -15,7 +15,7 @@ import java.util.Date;
  * @author zhiyu1998
  */
 public abstract class StorageService {
-    public StorageProperties properties;
+    public static StorageProperties properties;
 
     /**
      * 根据文件名，生成带时间戳的新文件名

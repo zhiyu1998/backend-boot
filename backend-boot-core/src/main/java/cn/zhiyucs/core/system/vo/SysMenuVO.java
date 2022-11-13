@@ -1,11 +1,9 @@
 package cn.zhiyucs.core.system.vo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import cn.zhiyucs.core.utils.TreeNode;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import cn.zhiyucs.common.utils.DateUtils;
-import cn.zhiyucs.core.utils.TreeNode;
 import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.Min;
@@ -48,7 +46,6 @@ public class SysMenuVO extends TreeNode<SysMenuVO> {
 	private Integer sort;
 
 	@Schema(description = "创建时间")
-	@JsonFormat(pattern = DateUtils.DATE_TIME_PATTERN)
 	private Date createTime;
 
 	@Schema(description = "上级菜单名称")

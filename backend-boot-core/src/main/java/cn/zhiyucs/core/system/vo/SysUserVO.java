@@ -1,10 +1,8 @@
 package cn.zhiyucs.core.system.vo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import cn.zhiyucs.common.utils.DateUtils;
 import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.Email;
@@ -75,6 +73,5 @@ public class SysUserVO implements Serializable {
     private String orgName;
 
     @Schema(description = "创建时间")
-    @JsonFormat(pattern = DateUtils.DATE_TIME_PATTERN)
     private Date createTime;
 }
