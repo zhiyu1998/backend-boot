@@ -2,6 +2,7 @@ package cn.zhiyucs.interceptor;
 
 import cn.hutool.core.text.CharSequenceUtil;
 import cn.hutool.core.util.ObjectUtil;
+import cn.zhiyucs.basic.entity.DataScope;
 import com.baomidou.mybatisplus.core.toolkit.PluginUtils;
 import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
 import net.sf.jsqlparser.JSQLParserException;

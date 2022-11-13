@@ -16,7 +16,7 @@ import java.util.Collection;
 @EqualsAndHashCode(callSuper = true)
 public class MobileAuthenticationToken extends AbstractAuthenticationToken {
     private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
-    private final transient Object principal;
+    private final Object principal;
     private String code;
 
     public MobileAuthenticationToken(Object principal, String code) {

@@ -3,7 +3,7 @@ package cn.zhiyucs.security.config;
 import cn.zhiyucs.security.mobile.MobileAuthenticationProvider;
 import cn.zhiyucs.security.mobile.MobileUserDetailsService;
 import cn.zhiyucs.security.mobile.MobileVerifyCodeService;
-import cn.zhiyucs.exception.SecurityAuthenticationEntryPoint;
+import cn.zhiyucs.security.entity.SecurityAuthenticationEntryPoint;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

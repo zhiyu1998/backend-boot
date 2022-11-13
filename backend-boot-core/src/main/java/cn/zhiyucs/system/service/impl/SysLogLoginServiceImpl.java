@@ -1,6 +1,7 @@
 package cn.zhiyucs.system.service.impl;
 
 import cn.hutool.core.text.CharSequenceUtil;
+import cn.hutool.extra.servlet.ServletUtil;
 import cn.zhiyucs.basic.service.impl.BaseServiceImpl;
 import cn.zhiyucs.system.convert.SysLogLoginConvert;
 import cn.zhiyucs.system.dao.SysLogLoginDao;
@@ -8,9 +9,7 @@ import cn.zhiyucs.system.entity.SysLogLoginEntity;
 import cn.zhiyucs.system.query.SysLogLoginQuery;
 import cn.zhiyucs.system.service.SysLogLoginService;
 import cn.zhiyucs.system.vo.SysLogLoginVO;
-import cn.zhiyucs.utils.AddressUtils;
 import cn.zhiyucs.utils.HttpContextUtils;
-import cn.zhiyucs.utils.IpUtils;
 import cn.zhiyucs.utils.PageResult;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -50,7 +49,7 @@ public class SysLogLoginServiceImpl extends BaseServiceImpl<SysLogLoginDao, SysL
         HttpServletRequest request = HttpContextUtils.getHttpServletRequest();
         assert request != null;
         String userAgent = request.getHeader(HttpHeaders.USER_AGENT);
-        String ip = IpUtils.getIpAddr(request);
+        String ip = ServletUtil.getClientIP(request);
         String address = AddressUtils.getAddressByIP(ip);
 
         SysLogLoginEntity entity = new SysLogLoginEntity();

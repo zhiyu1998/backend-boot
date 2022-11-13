@@ -2,6 +2,7 @@ package cn.zhiyucs.storage.service;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.file.FileNameUtil;
+import cn.hutool.core.text.StrPool;
 import cn.zhiyucs.storage.properties.StorageProperties;
 import org.springframework.util.StringUtils;
 
@@ -44,7 +45,7 @@ public abstract class StorageService {
 
         // 如果有前缀，则也带上
         if (StringUtils.hasText(properties.getConfig().getPrefix())) {
-            path = properties.getConfig().getPrefix() + "/" + path;
+            path = properties.getConfig().getPrefix() + StrPool.C_SLASH + path;
         }
 
         return path;

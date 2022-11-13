@@ -5,7 +5,7 @@ import cn.zhiyucs.basic.service.BaseService;
 import cn.zhiyucs.basic.user.SecurityUser;
 import cn.zhiyucs.basic.user.UserDetail;
 import cn.zhiyucs.constant.Constant;
-import cn.zhiyucs.interceptor.DataScope;
+import cn.zhiyucs.basic.entity.DataScope;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;

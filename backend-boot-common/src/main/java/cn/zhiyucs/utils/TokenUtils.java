@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class TokenUtils {
 
+    private TokenUtils() {}
+
     /**
      * 生成 AccessToken
      */

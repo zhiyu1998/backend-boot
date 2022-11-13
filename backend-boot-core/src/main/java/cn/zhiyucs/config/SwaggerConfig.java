@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public GroupedOpenApi userApi() {
         String[] paths = {"/**"};
         String[] packagedToMatch = {"cn.zhiyucs"};
-        return GroupedOpenApi.builder().group("Backend-Boot")
+        return GroupedOpenApi.builder().group("BackendBoot")
                 .pathsToMatch(paths)
                 .packagesToScan(packagedToMatch).build();
     }

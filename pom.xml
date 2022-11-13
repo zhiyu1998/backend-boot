@@ -11,6 +11,7 @@
         <module>backend-boot-common</module>
         <module>backend-boot-core</module>
         <module>backend-server</module>
+        <module>backend-boot-api</module>
     </modules>
 
     <parent>

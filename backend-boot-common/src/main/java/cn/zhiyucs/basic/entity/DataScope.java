@@ -1,4 +1,4 @@
-package cn.zhiyucs.interceptor;
+package cn.zhiyucs.basic.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

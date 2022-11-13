@@ -19,19 +19,19 @@ public class RedisCache {
     /**
      * 默认过期时长为24小时，单位：秒
      */
-    public final static long DEFAULT_EXPIRE = 60 * 60 * 24L;
+    public static final long DEFAULT_EXPIRE = 60 * 60 * 24L;
     /**
      * 过期时长为1小时，单位：秒
      */
-    public final static long HOUR_ONE_EXPIRE = 60 * 60 * 1L;
+    public static final long HOUR_ONE_EXPIRE = 60 * 60 * 1L;
     /**
      * 过期时长为6小时，单位：秒
      */
-    public final static long HOUR_SIX_EXPIRE = 60 * 60 * 6L;
+    public static final long HOUR_SIX_EXPIRE = 60 * 60 * 6L;
     /**
      * 不设置过期时长
      */
-    public final static long NOT_EXPIRE = -1L;
+    public static final long NOT_EXPIRE = -1L;
     @Resource
     private RedisTemplate<String, Object> redisTemplate;
 

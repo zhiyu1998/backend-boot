@@ -1,6 +1,7 @@
-package cn.zhiyucs.exception;
+package cn.zhiyucs.security.entity;
 
 
+import cn.zhiyucs.exception.ErrorCode;
 import cn.zhiyucs.utils.HttpContextUtils;
 import cn.zhiyucs.utils.JsonUtils;
 import cn.zhiyucs.utils.R;

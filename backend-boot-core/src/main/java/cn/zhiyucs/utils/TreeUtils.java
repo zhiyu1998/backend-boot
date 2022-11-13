@@ -13,6 +13,8 @@ import java.util.Map;
  */
 public class TreeUtils {
 
+    private TreeUtils() {}
+
     /**
      * 根据pid，构建树节点
      */

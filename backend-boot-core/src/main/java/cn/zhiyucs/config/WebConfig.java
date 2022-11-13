@@ -42,7 +42,6 @@ public class WebConfig implements WebMvcConfigurer {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         // 统一日期格式转换，不建议开启
-        //mapper.setDateFormat(new SimpleDateFormat(DateUtils.DATE_TIME_PATTERN));
         mapper.setTimeZone(TimeZone.getTimeZone("GMT+8"));
 
         converter.setObjectMapper(mapper);

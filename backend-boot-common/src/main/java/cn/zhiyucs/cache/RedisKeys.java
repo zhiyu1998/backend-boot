@@ -7,6 +7,8 @@ package cn.zhiyucs.cache;
  */
 public class RedisKeys {
 
+    private RedisKeys() {}
+
     /**
      * 验证码Key
      */

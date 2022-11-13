@@ -12,6 +12,8 @@ import java.io.StringWriter;
  */
 public class ExceptionUtils {
 
+    private ExceptionUtils() {}
+
     /**
      * 获取异常信息
      *
