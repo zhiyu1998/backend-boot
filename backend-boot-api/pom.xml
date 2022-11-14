@@ -14,8 +14,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>cn.zhiyucs</groupId>
+            <artifactId>backend-boot-common</artifactId>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 
