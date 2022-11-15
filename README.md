@@ -8,9 +8,9 @@
 
 请遵守该maven顺序，否则改动后启动不起来
 
-1. core    系统层面，分离业务
-2. server  启动
-3. common  公共类
+1. core 系统层面，分离业务
+2. server 启动
+3. common 公共类
 4. ...
 
 (备注：因为Spring Security依赖一些Impl，所以要先加载core)
@@ -29,18 +29,15 @@
 | guava       | 31.1-jre    | 工具                |
 | mapstruct   | 1.5.2.Final | 实体类转换          |
 
-
-
 ## 目录说明
 
-* api  控制层
-* biz  业务层
+* api 接口层
+* web 控制层
+* biz 业务层
 * common 工具类和配置
 * core 核心内容/扩展内容
-* dal  持久层
+* dal 持久层
 * server 启动
-
-
 
 ## 实用方法
 
