@@ -24,7 +24,7 @@
 | Security    |             | 安全                |
 | Redis       |             | 内存缓存            |
 | mybatisplus | 3.5.2       | 快速SQL             |
-| knife4j     | 3.0.3       | 文档                |
+| knife4j     | 4.0.0       | 文档                |
 | hutool      | 5.8.8       | 工具                |
 | guava       | 31.1-jre    | 工具                |
 | mapstruct   | 1.5.2.Final | 实体类转换          |
@@ -56,3 +56,11 @@
 4. 启动项目
 
 ![image-20221107150854676](./images/image-20221107150854676.png)
+
+## 文档地址 & 请求方式
+默认地址是：http://localhost:8080/doc.html
+
+默认账号和密码：admin & admin
+
+默认请求头：Authorization（可以通过登陆获取到）
+
