@@ -14,6 +14,11 @@
     <dependencies>
         <dependency>
             <groupId>cn.zhiyucs</groupId>
+            <artifactId>backend-boot-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.zhiyucs</groupId>
             <artifactId>backend-boot-core</artifactId>
             <version>${revision}</version>
         </dependency>
